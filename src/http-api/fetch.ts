@@ -271,7 +271,7 @@ export class FetchHttpApi<O extends IHttpOpts> {
                 referrer: "",
                 referrerPolicy: "no-referrer",
                 cache: "no-cache",
-                credentials: "omit", // we send credentials via headers
+                credentials: "include", // we modified it because we use cookies
                 keepalive: keepAlive,
             });
         } catch (e) {
